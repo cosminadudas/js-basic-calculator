@@ -10,6 +10,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles/app.css" />
+    <!-- ways to link js to html -->
+
+    <!-- 1. add a script tag and write js code directly between the script tags -->
+    <!-- <script>
+      alert('This works - between script tags!');
+    </script> -->
+
+    <!-- 2. link js code using script tag with src attribute -->
+    <!-- <script src="assets/scripts/app.js"></script> -->
   </head>
   <body>
     <header>
@@ -29,5 +38,9 @@
       <h2 id="current-calculation">0</h2>
       <h2>Result: <span id="current-result">0</span></h2>
     </section>
+
+    <!-- 3. using link element -> to make sure the page is loaded first -->
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/app.js"></script>
   </body>
 </html>
